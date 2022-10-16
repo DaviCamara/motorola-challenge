@@ -59,6 +59,8 @@ public class InputController {
 
     private String stringNormalizer(String inputText) {
         normalizedString = inputText.toLowerCase();
+        normalizedString.replaceAll("[^\\p{ASCII}]", "");
+
         if (!Normalizer.isNormalized(inputText, Form.NFD)) {
             normalizedString = Normalizer.normalize(normalizedString, Normalizer.Form.NFD);
         }
