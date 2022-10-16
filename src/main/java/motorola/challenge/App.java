@@ -1,7 +1,7 @@
 package motorola.challenge;
 
 import motorola.challenge.views.Input;
-import motorola.controllers.InputController;
+import motorola.challenge.controllers.InputController;
 
 public class App {
 
